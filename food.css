@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+.container{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+}
+.logo img{
+    width:110px;
+    height: 100px;
+}
+.container ul{
+    display: flex;
+    align-items: center;
+}
+.container::before{
+    content: "";
+    background-color: black;
+    position: absolute; 
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;;  
+}
+.container ul li{
+    font-size: medium;
+    font-weight: bold;
+    list-style: none;
+    
+}
+.container ul li a{
+    color: aliceblue;
+   display: block;
+   padding: 3px 22px;
+   border-radius: 20px;
+  text-decoration: none;
+}
+.container ul li a:hover{
+    color: black;
+    background-color: aliceblue;
+     
+}
+/* home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height: 155px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background:url("food2.jpg") no-repeat center center/cover;
+    position: absolute; 
+    width: 100%;
+    height: 651px;
+    z-index: -1;
+    opacity: 0.9;
+}
+/* service section */
+.service-container{
+    margin-top: 300px;
+  
+}
+#services{
+    margin: 34px;
+    display: flex;
+    gap: 20px;
+
+}
+#services .box{
+    border: 2px solid red;
+    padding: 30px;
+    margin: 3px 3px;
+    border-radius: 23px;
+    background-color: rgb(241, 237, 237);
+    font-family: 'Bree Serif', serif;
+    
+}
+#services .box p{
+    text-align: center;
+    
+}
+#services .box img{
+    height: 170px;
+    margin: auto;
+    display: block;
+    
+}
+
+.h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+    color: aliceblue;
+}
+.h-secondary{
+    font-size: 1.8rem;
+    
+}
+#home h1{
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+#home p{
+    color: aliceblue;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Bree Serif', serif;
+}
+.btn{
+    color: aliceblue;
+    padding: 6px 20px;
+    border: 2px solid white;
+    font-family: 'Bree Serif', serif;
+    background-color: brown;
+    margin-top: 20px;
+    font-size: 1.3rem;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+    color: black;
+}
+#client-section .client{
+    display: flex;
+    justify-content: center;
+    gap: 60px;   
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('food1.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 220px;
+    z-index: -1;
+    opacity: 0.6;
+}
+#client-section .client-item{
+    padding-top: 30px;
+}
+#client-section .client-item img{
+    height: 100px;
+    width: 100px;
+}
